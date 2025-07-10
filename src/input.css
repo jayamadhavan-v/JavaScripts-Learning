@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.bodyS{
+    @apply  font-[verdana] text-2xl bg-linear-to-r/oklab from-indigo-300 to-teal-300;
+}
+.h1{
+    @apply font-bold;
+}

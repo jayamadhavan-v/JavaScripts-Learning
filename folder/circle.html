@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle formulae</title>
+    <link rel="stylesheet" href="/folder/style.css">
+</head>
+<body class="bodyS">
+    <h1 class="font-bold text-2xl">circle formulae</h1>
+    <br>
+    <h1 class=" font-bold text-2xl text-violet-700 inline">circumference of the circle</h1>
+    <button id="myBtn" class=" border-2 px-5 py-0.2 text-md font-medium bg-violet-400"> get </button>
+    <div id ="output" class="border-2 w-50 h-10 inline  ml-2" ></div>
+    <script  >
+        let circumference ;
+        let radius;
+        // radius = window.prompt("enter a radius of the circle : " );
+        const pi = 3.14;
+        circumference = 2*pi*radius;
+        console.log(circumference);
+        document.getElementById("myBtn").onclick = function(){
+        document.getElementById("output").textContent = circumference;
+        }
+    </script>
+</body>
+</html>
