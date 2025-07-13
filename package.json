@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "js" : "npx @tailwindcss/cli -i ./src/input.css -o ./folder/style.css --watch",
+    "js" : "npx @tailwindcss/cli -i ./src/input.css -o ./Exercises/style.css --watch",
     "css" : "npx @tailwindcss/cli -i ./Learning-tailWindCSS/input.css -o ./Learning-tailWindCSS/style.css --watch"
   },
   "author": "",

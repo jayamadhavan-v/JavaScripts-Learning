@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle formulae</title>
+    <link rel="stylesheet" href="/Exercises/style.css">
+</head>
+
+<body class="bodyS">
+    <h1 class="text-4xl font-bold">Enter the raduis Of The Circle : </h1>
+    <form class="mt-3" action="">
+        <label for="">raduis :</label>
+        <input class="bg-white  border-2 " id="inputBtn" type="text">
+    </form>
+    <button id="myBtn"
+        class="border-2 ml-4 mt-4 px-4 py-2 bg-sky-600 text-white border-sky-900  rounded-md font-medium">Submit</button>
+    <h1 id="output">
+
+    </h1>
+    <script>
+        let circumference;
+        let radius;
+        const pi = 3.14;
+
+        document.getElementById("myBtn").onclick = function () {
+            radius = document.getElementById("inputBtn").value; // Fixed typo: changed raduis to radius
+            radius = Number(radius); // Convert string to number
+            circumference = 2 * pi * radius;
+            console.log(circumference);
+            document.getElementById("output").textContent = circumference + " cm";
+        }
+
+
+    </script>
+</body>
+
+</html>

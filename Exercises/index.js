@@ -56,12 +56,19 @@ document.getElementById("mySubmit").onclick = function(){
 }
 */
 
-let circumference ;
-let radius;
-radius = window.prompt("enter a radius of the circle : " );
-const pi = 3.14;
-circumference = 2*pi*radius;
-console.log(circumference);
-document.getElementById("myBtn").onclick = function(){
-    document.getElementById("output").textContent = circumference;
-}
+// Day- 4
+// Learning Math Functions
+
+let x = 3.4;
+let z = Math.round(x);
+console.log(z);
+
+//randam number genarator 
+let ranNum = Math.floor(Math.random() * 6) + 1;
+console.log("1 to 6-" + ranNum);
+let ranNum1 = Math.floor(Math.random() * 100) + 1;
+console.log("1 to 100-" + ranNum1);
+const min = 50;
+const max = 100;
+let ranNum2 = Math.floor(Math.random() * (max - min)) + min;
+console.log("50 to 100-" + ranNum2);

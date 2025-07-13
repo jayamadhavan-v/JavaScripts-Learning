@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randam-Number-genarator</title>
+    <link rel="stylesheet" href="/Exercises/style.css">
+</head>
+
+<body class="font-[verdana] text-center font-bold ">
+    <button id="myBtn" class="border-[1.5px] mt-20 px-2.5 py-1.5 rounded-sm bg-neutral-200 mb-4">Roll</button>
+    <br>
+    <label id="display" class="text-2xl text-pink-500" for=""></label>
+    <script>
+        const myBtn = document.getElementById("myBtn");
+        const display = document.getElementById("display")
+        myBtn.onclick = function () {
+            
+            let ranNum = Math.floor(Math.random() * 6) + 1;
+            console.log("1 to 6-" + ranNum);
+            display.textContent = ranNum;
+        }
+    </script>
+</body>
+
+</html>
