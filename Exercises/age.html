@@ -16,18 +16,21 @@
     <!-- script -->
     <script>
         const myBtn = document.getElementById("myBtn");
-        let age = document.getElementById("input").value;
-        console.log(age);
-        myBtn.onClick = function(){
+
+        myBtn.onclick = function () {
+            let age = document.getElementById("input").value;
+            age = Number(age); // Convert string to number
+
             if (age >= 18) {
-                document.getElementById("display").textContent = " Welcome to my Website ";
-                console.log( " Welcome to my Website ");
-            }
-            else {
-                document.getElementById("display").textContent = " Welcome to my Website";
+                document.getElementById("display").textContent = "Welcome to my Website";
+                console.log("Welcome to my Website");
+            } else {
+                document.getElementById("display").textContent = "You are not eligible";
+                console.log("You are not eligible");
             }
         }
     </script>
+
 </body>
 
 </html>
