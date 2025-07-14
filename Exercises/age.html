@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Statements</title>
+    <link rel="stylesheet" href="/Exercises/style.css">
+</head>
+
+<body class="">
+    <label class="font-bold text-xl  " for="">Enter your Age : </label>
+    <input id="input" class="border outline-none bg-white" type="number" name="">
+    <button class="border ml-4 px-1.5 bg-neutral-300 cursor-pointer" id="myBtn">Enter</button>
+    <h1 id="display" class=""></h1>
+    <!-- script -->
+    <script>
+        const myBtn = document.getElementById("myBtn");
+        let age = document.getElementById("input").value;
+        console.log(age);
+        myBtn.onClick = function(){
+            if (age >= 18) {
+                document.getElementById("display").textContent = " Welcome to my Website ";
+                console.log( " Welcome to my Website ");
+            }
+            else {
+                document.getElementById("display").textContent = " Welcome to my Website ";
+            }
+        }
+    </script>
+</body>
+
+</html>
