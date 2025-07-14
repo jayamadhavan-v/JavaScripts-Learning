@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="email">Username : </label>
+    <input  id="email">
+    <br>
+    <button onclick="extract()">submit</button>
+    <!-- Script -->
+     <script>
+        function extract(){
+            const email = document.getElementById("email").value;
+        const atIndex = email.indexOf("@");
+        let userName = email.slice(0,email.indexOf("@"));
+        let extension = email.slice(atIndex+1);
+
+        console.log(userName);
+        console.log(extension);
+        }
+     </script>
+</body>
+</html>
