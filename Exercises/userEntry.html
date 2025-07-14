@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Eligibility</title>
+    <link rel="stylesheet" href="/Exercises/style.css">
+</head>
+
+<body class="flex items-center justify-center h-screen font-semibold flex-col">
+    <div class="w-sm border rounded-full px-1 py-1">
+        <label for="">
+            Enter Your Age :
+        </label>
+        <input id="myInput" class="outline-none ml-1" type="">
+    </div>
+    <div class="">
+        <button id="myBtn" class=" border mt-1 px-1 rounded-full bg-pink-600 text-white cursor-pointer">Submit</button>
+    </div>
+    <h1 id="output" class="text-2xl "></h1>
+    <!-- script -->
+    <script>
+        const btn = document.getElementById("myBtn");
+        btn.onclick = function () {
+            let age = document.getElementById("myInput").value;
+            age = Number(age);
+            let a;
+            if (age >= 100) {
+                console.log("you are too old to enter to this website ");
+                a = "you are too old to enter to this website ";
+            }
+            else if (age == 0) {
+                console.log("you cant enter and you born baby");
+                a = "you cant enter and you born baby";
+            }
+            else if (age >= 18) {
+                console.log("welcome to website ");
+                a = "welcome to website ";
+            }
+            else {
+                console.log("you must be 18+ to enter this site");
+                a = "you must be 18+ to enter this site";
+            }
+            document.getElementById("output").textContent = a;
+        }
+    </script>
+</body>
+
+</html>

@@ -59,16 +59,37 @@ document.getElementById("mySubmit").onclick = function(){
 // Day- 4
 // Learning Math Functions
 
-let x = 3.4;
-let z = Math.round(x);
-console.log(z);
+// let x = 3.4;
+// let z = Math.round(x);
+// console.log(z);
 
-//randam number genarator 
-let ranNum = Math.floor(Math.random() * 6) + 1;
-console.log("1 to 6-" + ranNum);
-let ranNum1 = Math.floor(Math.random() * 100) + 1;
-console.log("1 to 100-" + ranNum1);
-const min = 50;
-const max = 100;
-let ranNum2 = Math.floor(Math.random() * (max - min)) + min;
-console.log("50 to 100-" + ranNum2);
+// //randam number genarator 
+// let ranNum = Math.floor(Math.random() * 6) + 1;
+// console.log("1 to 6-" + ranNum);
+// let ranNum1 = Math.floor(Math.random() * 100) + 1;
+// console.log("1 to 100-" + ranNum1);
+// const min = 50;
+// const max = 100;
+// let ranNum2 = Math.floor(Math.random() * (max - min)) + min;
+// console.log("50 to 100-" + ranNum2);
+
+// day-5
+
+// if else Statement 
+
+let time = 34;
+
+if(time< 12){
+    console.log("good morning");
+}
+else{
+    console.log("good afternoon");
+}
+
+let isStudent = true;
+if(isStudent){
+    console.log("you are the student");
+}
+else{
+    console.log("you are not a student");
+}
