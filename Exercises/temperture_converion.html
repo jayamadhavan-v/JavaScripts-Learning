@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature_conversion</title>
+    <link rel="shortcut icon" href="/assects/thermometer.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Exercises/style.css">
+</head>
+
+<body class="bg-gray-200 text-md ">
+    <div class="flex text-center items-center justify-center h-screen">
+        <div class="w-[350px]  border min-h-[25rem]">
+            <h1 class="font-bold text-[2.5rem] text-sky-500">Temperature conversion :</h1>
+            <input type="number" id="textBox"
+                class="my-5 px-4 py-1 border border-gray-400 bg-gray-100 rounded-sm outline-none text-center"
+                placeholder="Enter a value">
+
+            <div class="">
+                <input type="radio" name="input" id="toFahrenheit">
+                <label for="toFahrenheit">celsius➡️fahrenhelt</label>
+                <br>
+                <input class="mt-2" type="radio" name="input" id="toCelsius">
+                <label for="toCelsius">fahrenhelt➡️celsius</label>
+            </div>
+
+            <button class="mt-6 mb-6 bg-red-500 text-white rounded-xs px-2 py-0.5 hover:bg-red-600 cursor-pointer "
+                onclick="calculate()">
+                Submit
+            </button>
+
+            <div id="output" class="font-bold text-xl"></div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script>
+        const textBox = document.getElementById("textBox");
+        const toFahrenheit = document.getElementById("toFahrenheit");
+        const toCelsius = document.getElementById("toCelsius");
+        const output = document.getElementById("output");
+        let temp;
+
+        // function 
+        function calculate() {
+            //  event.preventDefault();
+            if (toFahrenheit.checked) {
+                // output.textContent = "You Selected to fahrenheit";
+                temp = Number(textBox.value);
+                temp = temp * 9 /5 +32;
+               output.textContent = temp +"°F"
+
+            }
+            else if (toCelsius.checked) {
+                // output.textContent = "You Selected to Celsius";
+                 temp = Number(textBox.value);
+                temp = (temp -32) * (5/9);
+               output.textContent = temp +"°c"
+            }
+            else {
+                output.textContent = "select a unit";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

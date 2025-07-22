@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method chaining </title>
+</head>
+
+<body>
+    <h1 id="output"></h1>
+    <!-- Sccript -->
+    <script>
+        const output = document.getElementById("output");
+        let userName = window.prompt("enter your UserName : ");
+        // no mathod chainning 
+
+        /*
+        userName = userName.trim();
+        let firstLetter = userName.charAt(0);
+        console.log(firstLetter);
+        firstLetter = firstLetter.toUpperCase();
+        console.log(firstLetter);
+        console.log(userName);
+        let extraChar = userName.slice(1);
+        extraChar = extraChar.toLowerCase();
+        userName = firstLetter + extraChar;
+        console.log(userName);
+        */
+
+        // using the method chaining
+
+        userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
+        console.log(userName);
+        output.textContent = userName;
+    </script>
+</body>
+
+</html>
