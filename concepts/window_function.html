@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout-Function</title>
+</head>
+<body>
+    <button onclick="startTimer()">Start</button>
+<button onclick="cancelTimer()">Cancel</button>
+
+<p id="msg"></p>
+
+<script>
+  let timerId;
+
+  function startTimer() {
+    document.getElementById("msg").textContent = "Message will appear in 3 seconds...";
+    timerId = setTimeout(() => {
+      document.getElementById("msg").textContent = "⏰ Time's up!";
+    }, 3000);
+  }
+
+  function cancelTimer() {
+    clearTimeout(timerId);
+    document.getElementById("msg").textContent = "❌ Timer Cancelled!";
+  }
+</script>
+
+</body>
+</html>

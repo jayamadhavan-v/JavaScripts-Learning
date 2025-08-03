@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading Example</title>
+</head>
+<body>
+
+  <h2 id="message">Click the button</h2>
+  <button onclick="loadContent()">Start</button>
+
+  <script>
+    function loadContent() {
+      const msg = document.getElementById("message");
+      msg.textContent = "Loading...";
+
+      setTimeout(() => {
+        msg.textContent = "Welcome, Jayamadhavan!";
+      }, 1000); // 3 seconds
+    }
+  </script>
+
+</body>
+</html>
