@@ -54,12 +54,34 @@ let milli = new Date(1000 * 60);
 //     clearInterval(c);
 //   }
 // }, 1000);
+// 
+// let isVisible = true;
+// 
+// setInterval(() => {
+  // let p = document.getElementById("blink");
+  // p.style.visibility = isVisible ? "hidden" : "visible";
+  // isVisible = !isVisible;
+// }, 2000);  // Blinks every 500ms
+// 
+// 
 
-let isVisible = true;
+let ms = Date.now();
+// console.log(startTime);
 
-setInterval(() => {
-  let p = document.getElementById("blink");
-  p.style.visibility = isVisible ? "hidden" : "visible";
-  isVisible = !isVisible;
-}, 2000);  // Blinks every 500ms
+
+// let ms = 7265000; // 2 hours, 1 minute, 5 seconds
+
+let totalSeconds = Math.floor(ms / 1000);
+let totalMinutes = Math.floor(ms / (1000 * 60));
+let totalHours   = Math.floor(ms / (1000 * 60 * 60));
+let day = Math.floor(totalHours/24);
+let mon = Math.floor(day/30);
+let year = Math.floor(mon/12);
+
+console.log("Seconds:", totalSeconds); // 7265
+console.log("Minutes:", totalMinutes); // 121
+console.log("Hours:", totalHours);     // 2
+console.log("Days:", day);    
+console.log("mon:", mon); 
+console.log("year:",year);    
 
