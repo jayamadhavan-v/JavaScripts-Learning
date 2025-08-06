@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error - concepts</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: rgb(32, 33, 34);
+        }
+    </style>
+    <!-- script -->
+    <script>
+        // const a = Number( window.prompt());
+        // console.log(a);
+        // let now = Date.now();
+        // console.log(now);
+
+        // let b = Number(now);
+        // console.log(b);
+
+        // let nows = new Date();
+        // console.log(nows);
+        // console.log(Number(nows));
+        try {
+            const dividend = Number(window.prompt("enter a dividend : "));
+            const divisor = Number( window.prompt("enter a divisor : "));
+            // console.log("teju");
+            if(isNaN(dividend) || isNaN(divisor)){
+                throw new Error("thevidya");
+            }
+            const result = dividend/divisor;
+            console.log(result);
+        }
+        catch(error){
+            console.error(error);
+        }
+        console.log("ur code is completed !");
+    </script>
+</body>
+
+</html>
