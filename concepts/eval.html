@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="display">
+</body>
+<script>
+   function calculate() {
+    try {
+        let displayValue = "√(10+15)";
+
+        // Replace √number (without parentheses)
+        let expression = displayValue.replace(/√(\d+(\.\d+)?)/g, function (match, number) {
+            return `Math.sqrt(${number})`;
+        });
+
+        // Replace √(...) with parentheses
+        expression = expression.replace(/√\(([^)]+)\)/g, function (match, innerExpr) {
+            return `Math.sqrt(${innerExpr})`;
+        });
+
+        // Now evaluate the expression
+        let result = eval(expression);
+
+        console.log("Expression:", expression);
+        console.log("Result:", result);
+
+    } catch (error) {
+        console.log("Error");
+    }
+}
+
+calculate();
+
+</script>
+</html>
