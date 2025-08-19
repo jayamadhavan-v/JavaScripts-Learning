@@ -2,75 +2,75 @@
 
 // ----------------fisrtElementChild
 
-// const element = document.getElementById("fruits");
+const element = document.getElementById("fruits");
 
-// const firstChild = element.firstElementChild;
-// firstChild.style.backgroundColor = "red";
+const firstChild = element.firstElementChild;
+firstChild.style.backgroundColor = "red";
 
 
 // ----------------.lastElementChild
 
 
 
-// const lastChild = element.lastElementChild;
+const lastChild = element.lastElementChild;
 
-// lastChild.style.backgroundColor = "red";
+lastChild.style.backgroundColor = "red";
 
-// const ulElement  = document.querySelectorAll("ul");
+const ulElement  = document.querySelectorAll("ul");
 
-// console.log(ulElement);
+console.log(ulElement);
 
-// // using an array method
+// using an array method
 
-// ulElement.forEach(ulElement =>{
-//     const lastChildren = ulElement.lastElementChild;
-//     lastChildren.style.backgroundColor="pink";
-// })
+ulElement.forEach(ulElement =>{
+    const lastChildren = ulElement.lastElementChild;
+    lastChildren.style.backgroundColor="pink";
+})
 
 
 //  ----------------nextSibiling ------------
 
 
-// const  ele1 = document.getElementById("fruits");
+const  ele1 = document.getElementById("fruits");
 
-// const nextSibiling = ele1.nextElementSibling;
+const nextSibiling = ele1.nextElementSibling;
 
-// nextSibiling.style.backgroundColor = "black";
-// nextSibiling.style.color = "white";
+nextSibiling.style.backgroundColor = "black";
+nextSibiling.style.color = "white";
 
 // ----------previous Element sibiling
 
-// const ele1 = document.getElementById("vegtable");
+const elem1 = document.getElementById("vegtable");
 
-// const prevSibiling  = ele1.previousElementSibling;
+const prevSibiling  = elem1.previousElementSibling;
 
-// prevSibiling.style.backgroundColor = "blue";
+prevSibiling.style.backgroundColor = "blue";
 
 // ----------parentElement
 
-// const apple = document.getElementById("apple");
+const apple = document.getElementById("apple");
 
-// const parent = apple.parentElement;
+const parent = apple.parentElement;
 
-// parent.style.backgroundColor = "pink";
+parent.style.backgroundColor = "pink";
 
-// const ice = document.getElementById("ice");
+const ice = document.getElementById("ice");
 
-// const iceParent = ice.parentElement;
-// iceParent.style.backgroundColor = "red";
+const iceParent = ice.parentElement;
+iceParent.style.backgroundColor = "red";
 
-//------------- children
+// ------------- children
 
-// const fruits = document.getElementById("fruits");
+const fruits = document.getElementById("fruits");
 
-// const fruitsChildren = fruits.children;
+const fruitsChildren = fruits.children;
 
-// console.log(fruitsChildren);
-// console.log(fruits);
+console.log(fruitsChildren);
+console.log(fruits);
 
 // not having built-in method so using array method
 
-// Array.from(fruitsChildren).forEach(child => {
-//     child.style.backgroundColor = " blue";
-// })
+Array.from(fruitsChildren).forEach(child => {
+    child.style.backgroundColor = " blue";
+})
 
