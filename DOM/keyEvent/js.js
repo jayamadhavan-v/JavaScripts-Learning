@@ -37,3 +37,7 @@ document.addEventListener("keydown", event => {
     myBox.textContent = "😡";
     myBox.style.background = "tomato";
 });
+
+document.addEventListener("keydown",event =>{
+    console.log(event.key);
+});
